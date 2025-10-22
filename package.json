@@ -1,0 +1,24 @@
+{
+  "name": "telegram-mini-earning-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "firebase/functions"
+  ],
+  "scripts": {
+    "dev:user": "npm run dev -w apps/user",
+    "dev:admin": "npm run dev -w apps/admin",
+    "build:user": "npm run build -w apps/user",
+    "build:admin": "npm run build -w apps/admin",
+    "start:user": "npm run start -w apps/user",
+    "start:admin": "npm run start -w apps/admin",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.10",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}

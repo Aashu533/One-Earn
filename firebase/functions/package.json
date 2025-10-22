@@ -1,0 +1,19 @@
+{
+  "name": "firebase-functions",
+  "private": true,
+  "engines": { "node": "20" },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^5.1.1",
+    "zod": "^3.23.8",
+    "telegram-webapps-types": "^7.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
